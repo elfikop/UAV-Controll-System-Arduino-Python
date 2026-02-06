@@ -1,0 +1,3 @@
+Radio Modules: https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/
+Servo and ESC: https://docs.arduino.cc/learn/electronics/servo-motors/
+Gamepads: https://www.youtube.com/watch?v=ax3E0pjXVKs
