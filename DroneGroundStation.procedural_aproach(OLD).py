@@ -152,7 +152,7 @@ def sendData():
     ser.flush()
 
 
-ser = serial.Serial('COM4', 115200, timeout=0.1)  # sprawdzic com
+ser = serial.Serial('/dev/ttyACM0', 115200, timeout=0.1)  # sprawdzic com
 time.sleep(2)
 padIni()
 
