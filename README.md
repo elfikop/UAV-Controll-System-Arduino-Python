@@ -29,4 +29,4 @@ Future functionality plans:
 	-Attaching the an I2C gyroscope to the UAV and implementing flight assist mode.
 	-Attaching an analog thermometter to the UAV and collecting the wether data of the flight.
 	if I switch to the "Blunt nose FT Versa Wing" vessel with additional modifications that will increase the wingspan to 150cm
-		-Attaching 3dprinted retrackable landing gear operated by 3 5g sevos
+		-Attaching 3dprinted retrackable landing gear operated by 3 5g servos
