@@ -28,7 +28,7 @@ void setup() {
   
   radio.openReadingPipe(0, address);
   radio.setPALevel(RF24_PA_MAX);
-  radio.setDataRate(RF24_250KBPS); // Niższa prędkość = większy zasięg i stabilność
+  radio.setDataRate(RF24_250KBPS); 
   radio.setRetries(15, 15);
   radio.startListening();
   data[0] = 0;
@@ -36,9 +36,13 @@ void setup() {
   data[2] = 76;
   delay(1000);
   Serial.println("Odbiornik aktywny...");
+   
   rightServo.write(76);
+   
+  leftServo.write(0);
+    
   leftServo.write(76);
-  ESC.write(0);
+ 
 }
 
 void loop() {
@@ -53,16 +57,16 @@ void loop() {
     ESC.write(data[0]);
     //ESC.write(0);
 
-    data[1] = constrain(data[1], 20, 120); // Zabezpieczenie przed wyjściem poza zakres
+    data[1] = constrain(data[1], 0, 180); 
     rightServo.write(data[1]);
 
-    data[2] = constrain(data[2], 20, 12);
+    data[2] = constrain(data[2],0, 180);
     leftServo.write(data[2]);
 
     // Debugowanie
-    Serial.print("XXX -> ESC: "); Serial.print(data[0]);
-    Serial.print(" | ServoR: "); Serial.print(data[1]);
-    Serial.print(" | ServoL: "); Serial.println(data[2]);
+    //Serial.print("XXX -> ESC: "); Serial.print(data[0]);
+    //Serial.print(" | ServoR: "); Serial.print(data[1]);
+    //Serial.print(" | ServoL: "); Serial.println(data[2]);
     //delay(10);
   }
 }
