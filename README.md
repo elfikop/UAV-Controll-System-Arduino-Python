@@ -1,4 +1,4 @@
-	This is a short brief of the information included in the "UAV software project (non autonomus).vpp" file.
+This is a short brief of the information included in the "UAV software project (non autonomus).vpp" file.
 I Recomend reading this file as the project is not finished and the vpp project might be messy or missleading.
 
 The main purpose of the project is to establish an uav software, both for the ground station and the vessel.
